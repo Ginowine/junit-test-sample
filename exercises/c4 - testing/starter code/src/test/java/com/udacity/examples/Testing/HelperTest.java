@@ -59,6 +59,7 @@ public class HelperTest {
         assertEquals("4", "4");
     }
 
+
     @Test
     public void test2() {
         assertEquals("test", "test1");
