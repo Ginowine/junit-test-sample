@@ -1,6 +1,6 @@
 package com.udacity.examples.Testing;
 
-import org.junit.Test;
+import org.junit.*;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
@@ -67,5 +67,25 @@ public class HelperTest {
     @Test
     public void test1() {
         assertEquals("test", "test");
+    }
+
+    @Before
+    public void init(){
+        System.out.println("This method runs before each test method");
+    }
+
+    @BeforeClass
+    public static void setUp(){
+        System.out.println("This method runs once before every other methods in the class");
+    }
+
+    @After
+    public void initEnd(){
+        System.out.println("Runs after each test method");
+    }
+
+    @AfterClass
+    public static void tearDown(){
+        System.out.println("Runs after each class");
     }
 }
